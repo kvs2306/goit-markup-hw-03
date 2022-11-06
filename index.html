@@ -7,32 +7,35 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     
-    <header class="top-line-bg">
+    <header class="top-line">
 
-        <a href="./index.html" lang="en" class="logo">
+        <a href="./index.html" class="logo">
            <span class="logo-stile">Web</span>Studio
         </a>
 
-        <nav class="menu">
-            <ul class="list">
+        <nav >
+            <ul class=" navigation list">
                 <li>
-                    <a class="curent" href="./index.html" class="menu-nav">Студія</a>
+                    <a class="curent item" href="./index.html" >Студія</a>
                 </li>
                 <li>
-                    <a href="./portfolio.html" class="menu-nav">Портфоліо</a>
+                    <a class="item" href="./portfolio.html" >Портфоліо</a>
                 </li>
                 <li>
-                    <a href="#" class="menu-nav">Контакти</a> 
+                    <a class="item" href="#" >Контакти</a> 
                 </li>
             </ul>
         </nav>
-        <ul class="list decoration">
-            <li><a href="mailto:info@devstudio.com" class="menu-contact"> info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="menu-contact">+38 096 111 11 11</a></li>
+        <ul class="contact list">
+            <li><a class="link" href="mailto:info@devstudio.com" > info@devstudio.com</a></li>
+            <li><a class="link" href="tel:+380961111111" >+38 096 111 11 11</a></li>
         </ul>
     </header>
 
@@ -44,39 +47,42 @@
         </section>
 
         <section class="speciality">
-            <h2>Особливості</h2>
-                <ul class="list">
-                    <li>
-                        <h3 class="speciality-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                        <p  class="speciality-descr">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                    </li>
-                    <li>
-                        <h3 class="speciality-title">ПУНКТУАЛЬНІСТЬ</h3>
-                        <p  class="speciality-descr">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                    </li>
-                    <li>
-                        <h3 class="speciality-title">ПЛАНУВАННЯ</h3>
-                        <p  class="speciality-descr">Так само консультація з широким активом значною мірою зумовлює.</p>
-                    </li>
-                    <li>
-                        <h3 class="speciality-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                        <p  class="speciality-descr">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                    </li>
-                </ul>
+            <h2 class="speciality-title">Особливості</h2>
+                <div class="container">
+                    <ul class="list block">
+                        <li>
+                            <h3 class="speciality-title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <p  class="speciality-descr">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+                        </li>
+                        <li>
+                            <h3 class="speciality-title">ПУНКТУАЛЬНІСТЬ</h3>
+                            <p  class="speciality-descr">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        </li>
+                        <li>
+                            <h3 class="speciality-title">ПЛАНУВАННЯ</h3>
+                            <p  class="speciality-descr">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        </li>
+                        <li>
+                            <h3 class="speciality-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <p  class="speciality-descr">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        </li>
+                    </ul>
+                </div>
         </section>
             
         <section class="practice">
-
-            <h2 class="practice-title">Чим ми займаємося</h2>
-            <div class="practice-box"> 
-                <ul class="list">
-                    <li>
+            
+             <h2 class="practice-title">Чим ми займаємося</h2>
+             
+            <div class="container">
+                <ul class="list block">
+                    <li class="box">
                         <img src="./img/box1.jpg" alt="developers" width="370">
                     </li>
-                    <li>
+                    <li class="box">
                     <img src="./img/box2.jpg" alt="adaptiv" width="370">
                     </li>
-                    <li>
+                    <li class="box">
                         <img src="./img/box3.jpg" alt="design" width="370">
                     </li>
                 </ul>
@@ -88,7 +94,7 @@
             <h2 class="team-title">
                 Наша команда
             </h2>
-                <ul class="list">
+                <ul class="list block">
                     <li>
                          <img src="./img/ihor.jpg" alt="Ігор Дем'яненко" width="270">
                          <h3 class="person-title">Ігор Дем'яненко</h3>
