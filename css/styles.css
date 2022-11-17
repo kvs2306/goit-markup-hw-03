@@ -299,35 +299,24 @@ body {
 
 .footer {
   background-color: var(--footer-color);
-  flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-.container-footer {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .logo-footer {
-  font-family: 'Raleway';
-  font-style: normal;
+  margin-bottom: 20px;
+  display: block;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--bgd-color);
-  margin-bottom: 20px;
-  display: block;
 }
 
 .style-logo-footer {
   color: var(--akcent-color);
-  margin-bottom: 20px;
 }
 
 .footer-adress {
