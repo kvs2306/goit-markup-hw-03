@@ -11,6 +11,7 @@
   --footer-color: #2f303a;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
   --team-bgd-color: #f5f4fa;
+  --button-active-color: #188ce8;
 }
 
 body {
@@ -166,6 +167,7 @@ body {
 
 .hero-button:hover,
 .hero-button:focus {
+  background-color: var(--button-active-color);
 }
 
 /*особливості*/
