@@ -26,55 +26,49 @@ body {
   margin-bottom: 0;
 }
 
-.block {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  display: block;
-  display: flex;
-  flex-direction: row;
-}
-
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .container {
   width: 1200px;
-  display: flex;
   margin-left: auto;
   margin-right: auto;
-  flex-wrap: wrap;
   padding-right: 15px;
   padding-left: 15px;
-  align-items: center;
 }
 
-/* heder */
+/* header */
 
 .top-line {
   background-color: var(--bgd-color);
   border-bottom: 1px solid #ececec;
 }
 
+.top-line-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  font-family: 'Raleway';
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--logo-color);
-  text-decoration: none;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .logo-stile {
   color: var(--akcent-color);
+}
+
+.navigation {
+  margin-left: 93px;
 }
 
 .navigation :hover,
@@ -82,82 +76,82 @@ body {
   color: var(--akcent-color);
 }
 
-.item {
+.nav-menu {
+  display: flex;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1, 14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--title-color);
-  margin-top: 32px;
-  margin-bottom: 32px;
-  display: block;
-}
-
-.navigation {
-  display: flex;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 93px;
-  padding: 0;
-}
-
-.navigation :not(:last-child) {
-  margin-right: 50px;
 }
 
 .curent {
   color: var(--akcent-color);
 }
 
-.contact {
+.contact-menu {
   display: flex;
   margin-left: auto;
-  padding: 0;
 }
 
-.contact :hover,
-.contact :focus {
+.contact-menu :hover,
+.contact-menu :focus {
   color: var(--akcent-color);
 }
 
-.link {
+.contacts-title {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   color: var(--descr-color);
 }
 
-.contact li:not(:last-child) {
+.contact-menu .contacts:not(:last-child) {
   margin-right: 50px;
 }
 /* герой */
 
 .hero {
-  background-color: var(--footer-color);
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--footer-color);
 }
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bgd-color);
-
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
-.button {
+.hero-button {
+  padding: 10px 32px;
+  text-align: center;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -168,26 +162,43 @@ body {
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
 
-  align-items: center;
-  text-align: center;
-  padding: 10px 32px;
+.hero-button:hover,
+.hero-button:focus {
 }
 
 /*особливості*/
 
-.speciality-title {
+.speciality-header {
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-color);
+}
+
+.speciality-menu {
+  display: flex;
+}
+
+.speciality-item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.speciality-title {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  display: block;
-  width: 270px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
 }
 
 .speciality-descr {
@@ -197,28 +208,34 @@ body {
   letter-spacing: 0.03em;
   margin-top: 0;
   margin-bottom: 0;
-  display: block;
-  width: 270px;
 }
 
 /* чим ми займаємось*/
+.section-practice {
+  padding-top: 0;
+}
+
+.practice-menu {
+  display: flex;
+}
+
+.practice-item:not(:first-child) {
+  margin-left: 30px;
+}
 
 .practice-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  display: block;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-top: 0;
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .practice-img {
   display: block;
-  width: 370px;
 }
 
 /* team */
@@ -228,68 +245,71 @@ body {
 }
 
 .team-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.block li:not(:last-child) {
-  margin-right: 30px;
+.team-menu {
+  display: flex;
 }
 
 .person-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  box-sizing: border-box;
-  width: 270px;
-  margin-top: 30px;
-  margin-bottom: 10px;
 }
 
 .person-descr {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
   letter-spacing: 0.03em;
-  box-sizing: border-box;
-  width: 270px;
-  margin-top: 0;
-  margin-bottom: 30px;
 }
 
 .person-img {
-  width: 270px;
   display: block;
 }
 
-.card {
-  width: 270px;
-  display: block;
+.team-card {
+  text-align: center;
   background-color: var(--bgd-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-card:not(:first-child) {
+  margin-left: 30px;
+}
+
 /* footer */
 
 .footer {
   background-color: var(--footer-color);
-  display: flex;
   flex-direction: column;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.container-footer {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .logo-footer {
@@ -305,7 +325,7 @@ body {
   display: block;
 }
 
-.stile-footer {
+.style-logo-footer {
   color: var(--akcent-color);
   margin-bottom: 20px;
 }
@@ -330,40 +350,32 @@ body {
   text-decoration: none;
 }
 
-.position li:not(:last-child) {
+.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.position :hover,
-.position :focus {
+.footer-item :hover,
+.footer-item :focus {
   color: var(--akcent-color);
 }
 
 /* портфоліо */
 
-.filters {
-  width: 1200px;
-  display: flexbox;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 87px;
-  margin-bottom: 94px;
-  padding-right: 15px;
-  padding-left: 15px;
+/* кнопки */
+
+.filter-menu {
+  display: flex;
+  margin-bottom: 50px;
+  margin-left: 297px;
 }
 
-.filters-title {
+.filter-title {
   margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  display: block;
-  margin: 0px;
   padding-top: 6px;
   padding-bottom: 6px;
   padding-left: 22px;
@@ -371,41 +383,34 @@ body {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
-.titles li:not(:last-child) {
-  margin-right: 8px;
+.filter-item:not(:first-child) {
+  margin-left: 8px;
 }
 
-.titles {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 50px;
-  margin-left: 297px;
-}
-
-.titles :hover,
-.titles :focus {
+.filter-menu :hover,
+.filter-menu :focus {
   color: var(--bgd-color);
   background-color: var(--akcent-color);
   border-color: var(--akcent-color);
   border-radius: 4px;
 }
 
-.top {
+/* розділи */
+.top-menu {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin: -15px;
 }
 
 .item-top {
-  width: 370px;
-  display: block;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  background: #ffffff;
-  border: 1px solid #eeeeee;
+  list-style: none;
+  margin: 15px;
 }
 
 .project-title {
@@ -430,7 +435,9 @@ body {
 }
 
 .item-img {
-  width: 370px;
   display: block;
-  margin-bottom: 20px;
+}
+
+.item-top-descr {
+  border: 1px solid #eeeeee;
 }
